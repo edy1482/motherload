@@ -22,12 +22,12 @@ class block(pygame.sprite.Sprite):
     # id belongs to the ore class
     # multiplier multiplies the ore value
     # value is how much the ore can sell for in the shop
-    def __init__(self, ore_id, x_pos, y_pos, width = 100, height = 100, multiplier = 1):
+    def __init__(self, ore_id, x, y, width = 100, height = 100, multiplier = 1):
         # Call the parent class (Sprite) constructor
         pygame.sprite.Sprite.__init__(self)
         self.ore_id = ore_id
-        self.x_pos = x_pos
-        self.y_pos = y_pos
+        self.x = x
+        self.y = y
         self.width = width
         self.height = height
         self.multiplier = multiplier
@@ -73,7 +73,8 @@ class block(pygame.sprite.Sprite):
 
 ### TESTS ###
 
-
+test_block = block(0, 0, 0)
+test_block.print()
     
 
     
